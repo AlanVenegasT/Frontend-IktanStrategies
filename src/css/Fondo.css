@@ -30,3 +30,29 @@
         background-position-x: 1000px;
     }
 }
+
+/* Regla de medios para pantallas de 1280px o más */
+@media screen and (min-width: 1280px) {
+    .container{
+        background-size: 1500px 150px;
+    }
+}
+
+/* Regla de medios para pantallas de 1024px o más */
+@media screen and (min-width: 1024px) {
+    .container{
+        background-size: 1500px 120px;
+    }
+}
+
+/* Regla de medios para pantallas de 768px o más */
+@media screen and (min-width: 768px) {
+    .container{
+        background-size: 800px 80px;
+    }
+}
+
+/* Estilos por defecto */
+.container{
+    background-size: 1000px 100px;
+}
