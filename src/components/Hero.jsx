@@ -16,7 +16,7 @@ const Hero = () => {
 
           <button
             type="button"
-            className="ml-32 mt-6 rounded-md bg-white py-2.5 px-3.5 text-sm font-normal text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="ml-32 mt-6 rounded-md bg-white py-2.5 px-9 text-base font-medium text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Button text
           </button>

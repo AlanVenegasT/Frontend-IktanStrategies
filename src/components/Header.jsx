@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
     
-    <nav className="bg-transparent fixed z-50  navbar w-full ">
+    <nav className="bg-[#DD102A] fixed z-50  navbar w-full ">
         <div className="hidden lg:block xl:block  w-full px-2 sm:px-6 lg:px-0 ">
           <div className="relative flex h-26 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
