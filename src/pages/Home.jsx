@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../components/About'
+import Blog from '../components/Blog'
 import Busqueda from '../components/Busqueda'
 import Elegirnos from '../components/Elegirnos'
 import Estadisticas from '../components/Estadisticas'
@@ -18,6 +19,7 @@ const Home = () => {
     <About/>
     <Estadisticas/>
     <Elegirnos/>
+    <Blog/>
     </>
   )
 }

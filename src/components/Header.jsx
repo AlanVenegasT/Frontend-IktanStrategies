@@ -3,12 +3,37 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { PlusIcon } from "@heroicons/react/20/solid";
+import { useEffect, useState } from "react";
+import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Header = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Clases tailwind
+  const navEstilos1 = "font-roboto text-base font-bold text-[#0000FF]";
+  const navEstilos2 = "font-roboto text-base font-bold text-white";
+  useEffect(() => {
+    // Funcion Flecha
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      // console.log(scrollTop);
+      if (scrollTop > 200) {
+        // cambia 100 por el número de píxeles que desees
+        setMenuOpen(true);
+      } else {
+        setMenuOpen(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
     
