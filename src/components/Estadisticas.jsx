@@ -8,7 +8,7 @@ const stats = [
 const Estadisticas = () => {
   return (
     <>
-    <div className="bg-white py-10 sm:py-10">
+    <div className="bg-white py-0 sm:py-0  mb-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden text-center sm:grid-cols-2 lg:grid-cols-4 shadow-md">

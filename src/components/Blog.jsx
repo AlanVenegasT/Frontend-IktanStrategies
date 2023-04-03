@@ -92,7 +92,7 @@ const posts = [
 const Blog = () => {
   return (
     <>
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-24 sm:pt-32 sm:pb-48">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className='text-[#DD102A] text-center text-sm '>Blog</h2>
@@ -105,10 +105,12 @@ const Blog = () => {
           <div className="mx-auto mt-12 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-12 lg:mx-0 lg:max-w-none lg:grid-cols-1  ">
             <Slider
               dots={true}
+              
               infinite={true}
               speed={500}
               slidesToShow={3}
               slidesToScroll={1}
+              
             >
               {posts.map((post) => (
                 <article

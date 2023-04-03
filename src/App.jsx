@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route element={<IndexLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="pagina-no-encontrada" element={<Pagina404 />} />
+          <Route path="*" element={<Pagina404 />} />
         </Route>
       </Routes>
     </BrowserRouter>

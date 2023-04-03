@@ -7,6 +7,7 @@ import Estadisticas from '../components/Estadisticas'
 import Hero from '../components/Hero'
 import Logos from '../components/Logos'
 import Services from '../components/Services'
+import Testimaniales from '../components/Testimaniales'
 
 const Home = () => {
   return (
@@ -19,7 +20,8 @@ const Home = () => {
     <About/>
     <Estadisticas/>
     <Elegirnos/>
-    <Blog/>
+    <Testimaniales/>
+    <Blog/> 
     </>
   )
 }

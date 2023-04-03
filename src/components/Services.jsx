@@ -39,7 +39,7 @@ const Services = () => {
     <div>
         <h2 className='text-[#DD102A] text-center text-sm '>Services</h2>
         <h3 className=' text-center text-3xl font-extrabold pb-5 pt-3 '>What We Offer</h3>
-        <p className=' text-center px-40 pb-8 '>Quis ipsum gravida. Accumsan lacus vel facilisis dolore magna aliqua lacus dolor sit amet, consectetur adipiscing elitd do.</p>
+        <p className=' text-center px-64 pb-8 '>Quis ipsum gravida. Accumsan lacus vel facilisis dolore magna aliqua lacus dolor sit amet, consectetur adipiscing elitd do.</p>
     </div>
 
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-5 px-16">
@@ -54,7 +54,7 @@ const Services = () => {
           <div className="min-w-0 flex-1">
             <a href="#" className="focus:outline-none">
               <span className="absolute inset-0" aria-hidden="true" />
-              <p className="text-sm font-medium text-gray-900 text-center pt-2">{person.name}</p>
+              <p className="text-sm font-lightm text-gray-900 text-center pt-2">{person.name}</p>
             </a>
           </div>
         </div>
