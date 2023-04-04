@@ -90,7 +90,7 @@ const Header = () => {
 
                 <img
                   class="block h-20 w-auto lg:hidden py-6 px-4 lg:py-8 lg:px-4 xl:py-8 xl:px-4 xl:pl-32 "
-                  src="LogoStrategies.png"
+                  src="LOGO IKTAN STRATEGIES blanco.png"
                   alt="Your Company"
                 />
             
@@ -98,7 +98,7 @@ const Header = () => {
            
                 <img
                   class="hidden h-20 w-auto  lg:block py-2 px-4 lg:py-2 lg:px-4 xl:py-2 xl:px-4 xl:pl-32"
-                  src="LogoStrategies.png"
+                  src="LOGO IKTAN STRATEGIES blanco.png"
                   alt="Your Company"
                 />
               
@@ -213,7 +213,7 @@ const Header = () => {
                   
                     <img
                       className="block h-2/3 w-auto lg:hidden"
-                      src="LogoStrategies.png"
+                      src="LOGO IKTAN STRATEGIES blanco.png"
                       alt="Your Company"
                     />
                   
