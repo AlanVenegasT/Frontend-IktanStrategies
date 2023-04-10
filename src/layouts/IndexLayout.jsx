@@ -11,7 +11,7 @@ export const IndexLayout = () => {
       
       <Header />
       <Outlet />
-      <Footer />
+     <Footer />  
     </>
   );
 };

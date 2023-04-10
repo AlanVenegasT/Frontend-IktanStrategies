@@ -4,8 +4,8 @@ import "../css/Fondo.css";
 const Hero = () => {
   return (
     <>
-      <header class='container'>
-        <div class='wave'>
+      <header class=''>
+        <div class=''>
         </div>
 
         <div className='absolute top-1/3  '>
