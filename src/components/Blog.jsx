@@ -1,9 +1,8 @@
 import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-
 import "slick-carousel/slick/slick-theme.css";
-
+import { useMediaQuery } from 'react-responsive'
 
 const posts = [
   {
@@ -90,10 +89,13 @@ const posts = [
 ]
 
 const Blog = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 }) 
+  const slidesToShow = isMobile ? 1 : 3
+
   return (
     <>
-      <div className="bg-white py-24 sm:pt-32 sm:pb-48">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="bg-white pt-32 pb-48 sm:pt-32 sm:pb-48">
+        <div className="mx-auto max-w-7xl px-6 md:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className='text-[#DD102A] text-center text-sm '>Blog</h2>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Latest News</h2>
@@ -105,10 +107,9 @@ const Blog = () => {
           <div className="mx-auto mt-12 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-12 lg:mx-0 lg:max-w-none lg:grid-cols-1  ">
             <Slider
               dots={true}
-              
               infinite={true}
               speed={500}
-              slidesToShow={3}
+              slidesToShow={slidesToShow}
               slidesToScroll={1}
               
             >

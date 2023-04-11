@@ -38,7 +38,7 @@ const Header = () => {
       className={`${
         isMenuOpen
           ? "fixed bg-white shadow-lg w-full z-10 text-white"
-          : "absolute bg-[#DD102A] w-full z-10 border-b-2 border-[#ffffff38]"
+          : "absolute bg-[#DD102A] w-full z-10 "
       } transition duration-500 ease-in-out`}
     >
 
@@ -71,7 +71,7 @@ const Header = () => {
               className={`mr-8 ${
                 isMenuOpen ? navEstilos1 : navEstilos2
               } relative after:absolute ${
-                isMenuOpen ? "after:bg-[#0000ff]" : "after:bg-gray-200"
+                isMenuOpen ? "after:bg-[#DD102A]" : "after:bg-gray-200"
               } after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300`}
             >
               {link.name}
@@ -79,12 +79,12 @@ const Header = () => {
           ))}
         </nav>
         <button
-          className="md:hidden rounded-md active:outline-none focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0000FF]"
+          className="md:hidden rounded-md active:outline-none focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#DD102A]"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 rounded-md text-white bg-gradient-to-br from-transparent to-transparent hover:text-white hover:from-[#0000ff7c] hover:to-[#0000FF7c]"
+            className="h-8 w-8 rounded-md text-white bg-[#DD102A] hover:text-white hover:from-[#DD102A] hover:to-[#DD102A]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -105,7 +105,7 @@ const Header = () => {
           {navigation.map((link) => (
             <a
               href={link.href}
-              className={`block px-3 py-2 rounded-md hover:text-white hover:bg-[#0000FF] ${
+              className={`block px-3 py-2 rounded-md hover:text-white hover:bg-[#DD102A] ${
                 isMenuOpen ? navEstilos1 : navEstilos1
               }`}
               key={link.name}
@@ -113,11 +113,11 @@ const Header = () => {
               {link.name}
             </a>
           ))}
-          <p className="px-3 py-2 rounded-md text-white bg-[#0000FF] mt-5 flex items-center justify-center text-center">
+          <p className="px-3 py-2 rounded-md text-white bg-[#DD102A] mt-5 flex items-center justify-center text-center">
             <span className="w-8 h-8">{<PhoneIcon />}</span>
             <span className="pl-3">(+52 1) 55-3717-1132</span>
           </p>
-          <p className="px-3 py-2 rounded-md text-white bg-[#0000FF] mt-5 flex items-center justify-center text-center lowercase">
+          <p className="px-3 py-2 rounded-md text-white bg-[#DD102A] mt-5 flex items-center justify-center text-center lowercase">
             <EnvelopeIcon
               className="h-8 w-8 flex-shrink-0"
               aria-hidden="true"
