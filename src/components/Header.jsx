@@ -43,7 +43,7 @@ const Header = () => {
     >
 
       {/* :DESKTOP MENU */}
-      <div className="mx-auto flex justify-between items-center px-5">
+      <div className="mx-auto flex justify-between items-center px-16">
         {/* ::Site logo and Name */}
         <a
           href="/"

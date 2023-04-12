@@ -3,7 +3,7 @@ import React from 'react'
 const Politicas = () => {
   return (
     <>
-         <div className="relative overflow-hidden bg-red-50 py-32">
+         <div className="relative overflow-hidden bg-slate-50 py-32">
       <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none] ">
         <div className="relative mx-auto h-full max-w-prose text-lg " aria-hidden="true">
           <svg
@@ -81,13 +81,13 @@ const Politicas = () => {
           </h1>
         </div>
         <div className="prose prose-lg prose-indigo lg:ml-28 lg:mr-28 md:ml-28 md:mr-28   ml-16 mr-16 mt-6 text-white  text-justify">
-          <h2 className='mb-5 font-bold text-[#33A86A]'>
-          AVISO DE PRIVACIDAD INTEGRAL (IKTAN Ambiental)
-          </h2>
+          <h2 className='mb-5 font-bold text-[#DD102A]'>
+          AVISO DE PRIVACIDAD INTEGRAL (IKTAN Strategies)
+          </h2> 
           <p className='mb-6 mt-6 text-black '>
           Este <b>Aviso de Privacidad</b> tiene por objeto proporcionarle una visión clara de cómo usamos los datos personales que el titular de datos personales (en lo sucesivo “Usted”)
           nos proporciona, nuestros esfuerzos por protegerlos, las opciones que tiene para controlar sus datos personales y proteger su privacidad, asimismo, la forma en que utilizamos 
-          sus datos personales y los terceros con los que la compartiremos. <b>IKTAN IKTAN Ambiental S.A.P.I DE C.V </b> (en lo sucesivo <b>IKTAN Strategies</b>) informa, mediante el presente Aviso de
+          sus datos personales y los terceros con los que la compartiremos. <b>IKTAN IKTAN Strategies S.A.P.I DE C.V </b> (en lo sucesivo <b>IKTAN Strategies</b>) informa, mediante el presente Aviso de
           Privacidad integral y en relación con el uso y protección de los datos personales que Usted ponga a disposición de <b>IKTAN Strategies</b>, lo siguiente:
           </p>
           <p className='mb-6 mt-6 text-black '>
@@ -95,46 +95,46 @@ const Politicas = () => {
           con los <b>Lineamientos del Aviso de Privacidad</b> publicados en el Diario Oficial de la Federación el 17 de enero de 2013, se informa lo siguiente:
           </p>
           <p className='mb-6 mt-6 text-black '>
-          Que el tratamiento de los datos personales por parte de <b>IKTAN Ambiental</b>, busca apegarse y ser conforme con los principios de licitud, consentimiento, información, calidad, 
+          Que el tratamiento de los datos personales por parte de <b>IKTAN Strategies</b>, busca apegarse y ser conforme con los principios de licitud, consentimiento, información, calidad, 
           finalidad, lealtad, proporcionalidad y responsabilidad que tutela la Ley de Datos; de la misma forma se busca que dicho tratamiento sea legítimo, controlado e informado, con
            la finalidad de garantizar la privacidad y la protección de los mismos, así como garantizar el derecho de autodeterminación informativa del titular de dichos datos.
           </p>
-          <h2 className='mb-5 font-bold text-[#33A86A]'>
+          <h2 className='mb-5 font-bold text-[#DD102A]'>
           I. IDENTIDAD Y DOMICILIO DEL RESPONSABLE:
           </h2>
           <p className='mb-6 mt-6 text-black '>
-          <b>IKTAN Ambiental S.A.P.I DE C.V </b> con domicilio en Av. Jardín 251, Tlatilco, Azcapotzalco, 02860 Ciudad de México, CDMX, le informa que será el responsable de recabar sus datos 
+          <b>IKTAN Strategies S.A.P.I DE C.V </b> con domicilio en Av. Jardín 251, Tlatilco, Azcapotzalco, 02860 Ciudad de México, CDMX, le informa que será el responsable de recabar sus datos 
           personales, del uso que se le dé a los mismos y de su protección, comprometiéndose a respetar y cumplir con lo establecido en el presente Aviso de Privacidad y la Ley de Datos.
-          <b>IKTAN Ambiental</b> le informa que sus datos personales serán tratados y resguardados con base en los principios de licitud, calidad, consentimiento, información, finalidad, lealtad,
+          <b>IKTAN Strategies</b> le informa que sus datos personales serán tratados y resguardados con base en los principios de licitud, calidad, consentimiento, información, finalidad, lealtad,
           proporcionalidad y responsabilidad, establecidos en la Ley de Datos y su Reglamento.
           </p>
           <p className='mb-6 mt-6 text-black '>
           Al proporcionar sus datos personales a <b>IKTAN Strategies</b>, Usted otorga su consentimiento para que recabe y utilice dichos datos únicamente para los fines descritos en el presente 
           Aviso de Privacidad.
           </p>
-          <h2 className='mb-6 mt-6 font-bold text-[#33A86A]'>
+          <h2 className='mb-6 mt-6 font-bold text-[#DD102A]'>
           II. FINALIDADES DEL TRATAMIENTO DE DATOS PERSONALES
           </h2>
           <p className='text-black'>
-          La información de los usuarios de <b>IKTAN Ambiental</b> será utilizada para las siguientes finalidades principales:
+          La información de los usuarios de <b>IKTAN Strategies</b> será utilizada para las siguientes finalidades principales:
           </p>
           <ul className='list-inside text-base text-black list-decimal'>
             <li> Fines de identificación;</li>
             <li> Crear y mantener actualizada la base de datos interna;</li>
-            <li> Permitirle el acceso a los cursos que lleve a cabo <b>IKTAN Ambiental</b></li>
+            <li> Permitirle el acceso a los cursos que lleve a cabo <b>IKTAN Strategies</b></li>
             <li> Enviarle vía correo electrónico invitaciones a nuestros cursos e información de interés relacionada con</li>
-            <li> Enviarle físicamente a su domicilio las constancias de los cursos realizados en <b>IKTAN Ambiental</b></li>
+            <li> Enviarle físicamente a su domicilio las constancias de los cursos realizados en <b>IKTAN Strategies</b></li>
           </ul>
 
           <p className='mb-6 mt-6 text-black'>
-          <b>IKTAN Ambiental</b> cuenta con los recursos tecnológicos, materiales y humanos, así como con procedimientos para proteger 
+          <b>IKTAN Strategies</b> cuenta con los recursos tecnológicos, materiales y humanos, así como con procedimientos para proteger 
           sus datos personales y prevenir accesos no autorizados, uso o divulgación de los mismos, sin importar donde se traten los
           datos personales. No obstante, usted podrá manifestar su negativa para el tratamiento de sus datos personales para cualquiera
           de las finalidades listadas rechazando el presente Aviso de Privacidad. En caso contrario se entenderá que usted como titular, 
           consiente el tratamiento de sus datos personales para todas las finalidades enumeradas anteriormente
           </p>
 
-          <h2 className='mb-6 mt-6 font-bold text-[#33A86A]'>
+          <h2 className='mb-6 mt-6 font-bold text-[#DD102A]'>
           III. DATOS PERSONALES QUE PODRÁN SER RECABADOS Y TRATADOS
           </h2>
 
@@ -153,35 +153,35 @@ const Politicas = () => {
             <li> Domicilio</li>
           </ul>
 
-          <h2 className='mb-6 mt-6 font-bold text-[#33A86A]'>
+          <h2 className='mb-6 mt-6 font-bold text-[#DD102A]'>
           VI. TRANSFERENCIA DE DATOS PERSONALES
           </h2>
 
           <p className='mb-6 mt-6 text-black '>
           Se hace de su conocimiento en términos de lo dispuesto por el artículo 37 fracciones IV, V, VI, VII de la Ley y 68 del Reglamento,
-           que <b>IKTAN Ambiental</b> podrá divulgar y transferir sus Datos Personales. En estos casos, <b>IKTAN Ambiental</b> tomará todas las medidas 
+           que <b>IKTAN Strategies</b> podrá divulgar y transferir sus Datos Personales. En estos casos, <b>IKTAN Strategies</b> tomará todas las medidas 
            necesarias para solicitar que se protejan adecuadamente sus Datos Personales, de conformidad con la Ley de Datos y las políticas 
-           de privacidad para la protección de los mismos. <b>IKTAN Ambiental</b> no podrá transferir los Datos Personales a terceros sin su 
+           de privacidad para la protección de los mismos. <b>IKTAN Strategies</b> no podrá transferir los Datos Personales a terceros sin su 
            consentimiento, salvo por lo previsto en el presente Aviso de Privacidad y por las excepciones previstas en el artículo 37 de la ley.
           </p>
 
-          <h2 className='mb-6 mt-6 font-bold text-[#33A86A]'>
+          <h2 className='mb-6 mt-6 font-bold text-[#DD102A]'>
           V. MEDIDAS DE SEGURIDAD PARA PROTEGER SUS DATOS PERSONALES
           </h2>
 
           <p className='mb-6 mt-6 text-black '>
           Su información personal será resguardada bajo estricta confidencialidad, y para prevenir razonablemente el uso o divulgación indebida de 
-          la misma, <b>IKTAN Ambienttal</b> ha implementado medidas de seguridad de conformidad con la Ley de Datos. Contamos con políticas de privacidad 
+          la misma, <b>IKTAN Strategies</b> ha implementado medidas de seguridad de conformidad con la Ley de Datos. Contamos con políticas de privacidad 
           y acceso restringido a la información personal sólo a empleados autorizados, un inventario de datos personales y de los sistemas de 
           tratamiento y análisis de riesgo.
           </p>
 
-          <h2 className='mb-6 mt-6 font-bold text-[#33A86A]'>
+          <h2 className='mb-6 mt-6 font-bold text-[#DD102A]'>
           VI. MEDIOS PARA EJERCER LOS DERECHOS DE ACCESO, RECTIFICACIÓN, CANCELACIÓN U OPOSICIÓN (“DERECHOS ARCO”).
           </h2>
 
           <p className='mb-6 mt-6 text-black '>
-          De conformidad con el <b>artículo 22,23,24 y 25 de la Ley de Datos</b>, Usted tiene el derecho de acceder a los datos que posee <b> IKTAN Ambiental </b> 
+          De conformidad con el <b>artículo 22,23,24 y 25 de la Ley de Datos</b>, Usted tiene el derecho de acceder a los datos que posee <b> IKTAN Strategies </b> 
           y a los detalles del tratamiento de éstos, así como a rectificarlos en caso de ser inexactos o incompletos; cancelarlos en los términos de 
           la Ley de Datos u oponerse al tratamiento de estos para fines específicos.
           </p>
@@ -200,26 +200,26 @@ const Politicas = () => {
           </ul>
 
           <p className='mb-6 mt-6 text-black '>
-          <b>IKTAN Ambiental</b> dará respuesta a dicha solicitud en un plazo no mayor a 20 días por el mismo medio por el cual Usted haya realizado
+          <b>IKTAN Strategies</b> dará respuesta a dicha solicitud en un plazo no mayor a 20 días por el mismo medio por el cual Usted haya realizado
            su solicitud, por medio de copias simples o electrónicamente, según sea el caso. En caso de que su solicitud se conteste de manera 
            afirmativa o procedente, los cambios solicitados se harán en un plazo máximo de 15 días hábiles.
           </p>   
 
           <p className='mb-6 mt-6 text-black '>
-          En caso de que Usted solicite el acceso a sus datos personales, <b> IKTAN Technologie </b> le informará mediante el correo electrónico en el que 
+          En caso de que Usted solicite el acceso a sus datos personales, <b> IKTAN Strategies </b> le informará mediante el correo electrónico en el que 
           comuniquemos nuestra respuesta a su solicitud, el medio por el cual se le dará acceso a su información en caso de ser procedente.
-          <b> IKTAN Ambiental </b> podrá ampliar los plazos referidos en este párrafo, por una sola vez, por un periodo igual al original, lo cual le será
+          <b> IKTAN Strategies </b> podrá ampliar los plazos referidos en este párrafo, por una sola vez, por un periodo igual al original, lo cual le será
           informado.
           </p>
 
-          <h2 className='mb-6 mt-6 font-bold text-[#33A86A]'>
+          <h2 className='mb-6 mt-6 font-bold text-[#DD102A]'>
           VII. MEDIOS PARA REVOCAR EL CONSENTIMIENTO PARA EL TRATAMIENTO DE DATOS PERSONALES
           </h2>            
 
           <p className='mb-6 mt-6 text-black '>
           Para revocar su consentimiento para el tratamiento de sus datos personales, deberá presentar su solicitud enviando un correo electrónico a 
           la siguiente dirección: contacto@iktanst.com. El usuario debe seguir el procedimiento que se describe en el numeral anterior. Si con 
-          posterioridad a la revocación, solicita la confirmación de la misma, <b>IKTAN Ambiennntal </b> le responderá de forma expresa.
+          posterioridad a la revocación, solicita la confirmación de la misma, <b>IKTAN Strategies </b> le responderá de forma expresa.
           </p>
 
           <p className='mb-6 mt-6 text-black '>
@@ -227,7 +227,7 @@ const Politicas = () => {
           ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales.
           </p>
 
-          <h2 className='mb-6 mt-6 font-bold text-[#33A86A]'>
+          <h2 className='mb-6 mt-6 font-bold text-[#DD102A]'>
           VIII. OPCIONES PARA LIMITAR EL USO O DIVULGACIÓN DE SUS DATOS PERSONALES
           </h2> 
 
@@ -242,7 +242,7 @@ const Politicas = () => {
           Recibido el escrito por el que nos indique que desea limitar el uso y divulgación de sus datos personales, tendremos 5 días hábiles para analizar, atender y enviarle la respuesta correspondiente. El medio por el cual le enviaremos nuestra respuesta, será aquel que nos sea indicado por usted en su solicitud, correo electrónico o, en su defecto, por el mismo medio por el cual nos hizo llegar su escrito.
           </p>
 
-          <h2 className='mb-6 mt-6 font-bold text-[#33A86A]'>
+          <h2 className='mb-6 mt-6 font-bold text-[#DD102A]'>
           IX. ¿CÓMO PROTEGEMOS SU INFORMACIÓN PERSONAL?
           </h2> 
 
@@ -275,7 +275,7 @@ const Politicas = () => {
             <a href="/">
                 <button
                   type="submit"
-                  className="float-right animate-bounce   rounded-lg  bg-gradient-to-r from-[#0C6201] via-[#6FCC36] to-[#B7E163] duration-700 py-2 px-6 text-base  text-white font-semibold hover:bg-[#BACB5A] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 shadow-2xl"
+                  className="float-right animate-bounce   rounded-lg  bg-[#DD102A] duration-700 py-2 px-6 text-base  text-white font-semibold hover:bg-[#BACB5A] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 shadow-2xl"
                 >
                   Acepto
                 </button>

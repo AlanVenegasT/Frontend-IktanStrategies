@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
      <div className="relative bg-[#DD102A] flex  items-center h-screen">
-      <div className='flex flex-col pl-10'>
+      <div className='flex flex-col pl-20'>
       <h1 className="text-white text-4xl font-bold w-96 mb-2 ">We are The Brilliants In Terms Of Digital Marketing</h1>
       <h2 className='text-white text-2xl mb-10'>Book your 30-minute free strategy call</h2>
       <button

@@ -3,6 +3,7 @@ import Pagina404 from "./components/Pag404";
 import { IndexLayout } from "./layouts/IndexLayout";
 import Home from "./pages/Home";
 import Politicas from "./pages/Politicas";
+import Contacto from "./pages/Contacto";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
           
         </Route>
         <Route path="/politicas" element={<Politicas />} />
+        <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<Pagina404 />} />
+
       </Routes>
     </BrowserRouter>
   );
