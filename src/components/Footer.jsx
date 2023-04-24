@@ -28,17 +28,7 @@ const navigation = {
 const Footer = () => {
   return (
     <>
-    <div className="absolute w-[300px] h-32 md:w-[600px] md:h-32 lg:w-[600px] lg:h-32 xl:w-[600px] xl:h-32 bg-white shadow-md left-1/4 -translate-y-16 -translate-x-14 md:-translate-x-28 lg:translate-x-0 xl:translate-x-16">
-      <h4 className="text-2xl font-semibold text-center pt-4">Have a project in mind?</h4>
-      <div className="flex justify-center pt-4">
-        <button
-            type="button"
-            className="rounded-md bg-[#DD102A] py-2.5 px-8 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Discover More
-        </button>
-        </div>
-    </div>
+    
     
     <footer aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">

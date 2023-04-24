@@ -23,13 +23,13 @@ const Banner = () => {
                 </span>
 
                 <p className="ml-3 truncate font-medium text-white ">
-                  <span className="md:hidden  ">www.iktanstrategies.com</span>
-                  <span className="hidden md:inline ">www.iktanstrategies.com</span>
+                  <span className="md:hidden  ">www.iktantraining.com</span>
+                  <span className="hidden md:inline ">www.iktantraining.com</span>
                 </p>
               </div>
               <div className="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
                 <a
-                  href="https://iktanstrategies.com/"
+                  href="https://iktantraining.com/"
                   className="flex items-center justify-center rounded-md border-2 border-white bg-transparent px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-50 hover:text-[#0C3858] duration-700 "
                 >
                   Conocenos

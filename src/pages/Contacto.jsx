@@ -1,156 +1,197 @@
-import React from 'react'
+import { Link } from "react-router-dom";
+import React, { useRef, useEffect, useState } from "react";
+// import ScrollReveal from "scrollreveal";
+import emailjs from "@emailjs/browser";
+
 
 
 const Contacto = () => {
-  return (
-    <>
-        <div className="flex min-h-full ">
-        <div className="flex flex-1 flex-col justify-center pt-12 pb-36 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-12 bg-slate-300 ">
-          <div className="mx-auto w-full max-w-lg lg:w-[700px]">
-            <div>
-              <h2 className="mt-6 text-3xl font-bold tracking-tight text-white">
-                ¡Conéctate con nosotros y da el primer paso hacia un futuro
-                mejor!
-              </h2>
-              <p className="mt-2 text-sm text-gray-600">
-                {" "}
-                <a
-                  href="#"
-                  className="font-medium text-[#EAFF6A] hover:text-indigo-500"
-                >
-                  ¡No lo dudes!
-                </a>
-              </p>
-            </div>
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [terminos, setTerminos] = useState(false);
+  
 
-            <div className="mt-8">
-              <div>
-                
-                <div className="relative mt-6">
-                  <div
-                    className="absolute inset-0 flex items-center"
-                    aria-hidden="true"
-                  >
-                    <div className="w-full border-t border-gray-300" />
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!terminos) {
+      alert("Debe aceptar los términos y condiciones para enviar el formulario");
+      return;
+    }
+    alert("El formulario se ha enviado");
+    if ([nombre, email, message].includes("")) {
+      console.log("alerta todos los campos son obligatorios");
+    } else {
+      sendEmail(e);
+    }
+  };
+
+
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_f7lwe15",
+        "template_lvk8xbm",
+        form.current,
+        "vXuFb78JyhLiy4xxw"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+      setNombre("");
+    setEmail("");
+    setMessage("");
+    setTerminos(false);
+    form.current.reset();
+  };
+  return (
+    <div>
+      <div className="relative bg-white">
+      <div className="lg:absolute lg:inset-0 lg:left-1/2 bg-slate-500">
+        <img
+          className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full opacity-30"
+          src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=2560&h=3413&&q=80"
+          alt=""
+        />
+      </div>
+      <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
+        <div className="px-6 lg:px-8">
+          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Let's work together</h2>
+            <p className="mt-2 text-lg leading-8 text-gray-600">
+              Proin volutpat consequat porttitor cras nullam gravida at orci molestie a eu arcu sed ut tincidunt magna.
+            </p>
+            <form ref={form} onSubmit={(e) => handleSubmit(e)} className="mt-16">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        
+              <div className="sm:col-span-2">
+                  <div className="flex justify-between text-sm leading-6">
+                    <label htmlFor="name" className="block font-semibold text-gray-900">
+                      Nombre
+                    </label>
+                    <p id="phone-description" className="text-gray-400">
+                      {/* Optional */}
+                    </p>
                   </div>
-                  <div className="relative flex justify-center text-sm">
-                    <span className="bg-white px-2 text-gray-500">
-                      
-                    </span>
+                  <div className="mt-2.5">
+                    <input
+                      type="text"
+                      name="user_name"
+                      id="user_name"
+                      autoComplete="name"
+                      value={nombre}
+                      onChange={(e) => setNombre(e.target.value)}
+                      placeholder="Cristian Aldair"
+                      aria-describedby="phone-description"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
                   </div>
                 </div>
+
+                <div className="sm:col-span-2">
+                  <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                    Email
+                  </label>
+                  <div className="mt-2.5">
+                    <input
+                      id="user_email"
+                      name="user_email"
+                      type="email"
+                      value={email}
+                      autoComplete="email"
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="CristianAldair@gmail.com"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+                
+                <div className="sm:col-span-2">
+                  <div className="flex justify-between text-sm leading-6">
+                    <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                    Mensaje
+                    </label>
+                    <p id="message-description" className="text-gray-400">
+                      Max 500 characters
+                    </p>
+                  </div>
+                  <div className="mt-2.5">
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={4}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      aria-describedby="message-description"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      defaultValue={''}
+                    />
+                  </div>
+                </div>
+              
               </div>
 
-              <div className="mt-6">
-                <form action="#" method="POST" className="space-y-6">
-                  <div>
+              <div className="mt-12 mb-5 lg:mb-2 xl:mb-5 flex items-center">
+                  <input
+                    id="terminos"
+                    name="terminos"
+                    type="checkbox"
+                    onChange={(e) => setTerminos(e.target.checked)}
+                    className="h-4 w-4 rounded border-gray-300 text-[#DD102A] focus:ring-[#DD102A]"
+                  />
+                  <div className="ml-2">
                     <label
-                      htmlFor="name"
-                      className="block text-sm font-light text-white"
+                      htmlFor="terminos"
+                      className=" text-sm font-normal text-black md:text-base lg:text-base"
                     >
-                      Nombre Completo
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        autoComplete="text"
-                        required
-                        className="block w-full appearance-none rounded-md border border-[#2E2F36] px-3 py-2  bg-[#2E2F36] shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-light text-white"
-                    >
-                      Email
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        autoComplete="email"
-                        required
-                        className="block w-full appearance-none rounded-md border border-[#2E2F36] px-3 py-2 placeholder-gray-400 shadow-sm bg-[#2E2F36] focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="comment"
-                      className="block text-sm font-light text-white"
-                    >
-                      Comentario
-                    </label>
-                    <div className="mt-1">
-                      <textarea
-                        rows={4}
-                        name="comment"
-                        id="comment"
-                        className="block w-full rounded-md border-[#2E2F36] shadow-sm focus:border-indigo-500 bg-[#2E2F36] focus:ring-indigo-500 sm:text-sm"
-                        defaultValue={""}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <input
-                        id="remember-me"
-                        name="remember-me"
-                        type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-black focus:ring-[#EAFF6A]"
-                      />
-                      <label
-                        htmlFor="remember-me"
-                        className="ml-4 block text-base text-white"
-                      >
-                        Al seleccionar esto, usted acepta las{" "}
-                        <span className="font-semibold text-[#EAFF6A] underline " >
+                      Al seleccionar esto, usted acepta las{" "}
+                      <Link to="/Politicas">
+                        {" "}
+                        <span className="font-bold md:text-xs lg:text-xs underline ">
                           {" "}
-                          Politicas de Privacidad{" "} 
+                          Políticas de Privacidad
                         </span>{" "}
-                        
-                        y{" "}
-                        <span className="font-semibold text-[#EAFF6A] underline">
+                      </Link>{" "}
+                      y{" "}
+                      <Link to="/Politicas">
+                        {" "}
+                        <span className="font-bold underline  md:text-xs lg:text-xs">
                           {" "}
                           Cookie Policy.
                         </span>
-                      </label>
-                    </div>
+                      </Link>
+                    </label>
                   </div>
+                </div>
+              <div className="mt-10 flex justify-end border-t border-gray-900/10 pt-8">
 
-                  <div>
-                    <button
-                      type="submit"
-                      className="flex w-full justify-center rounded-md border border-transparent duration-700 hover:scale-105 bg-[#BACB5A] py-3 px-4 text-base font-light text-black shadow-sm hover:bg-[#EAFF6A]  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                    >
-                      Enviar
-                    </button>
-                  </div>
-                </form>
+                <button
+                  type="submit"
+                  className="rounded-md bg-[#DD102A] px-3.5 py-3 text-center text-sm font-semibold text-white shadow-sm hover:text-white hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 duration-700 hover:scale-110 focus-visible:outline-indigo-600"
+                >
+                  Enviar
+                </button>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="relative hidden w-0 flex-1 lg:block">
-          
-          
-          <div className="absolute inset-0 blur-sm  bg-center bg-cover bg-[url('https://iktanstrategies.com/wp-content/uploads/2020/12/Atardecer-plataforma.jpg')] ">
-           <div className="w-full h-full  bg-gradient-to-r from-[#1F202] ">
+
               
-           </div>
+            </form>
           </div>
         </div>
       </div>
-    </>
-  )
-}
+    </div>
+    </div>
+  );
+};
 
-export default Contacto
+export default Contacto;

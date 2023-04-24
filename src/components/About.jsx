@@ -14,10 +14,11 @@ const About = () => {
             />
             <div className="w-full flex-auto">
             <h2 className='text-[#DD102A] text-start text-sm '>About Us</h2>
-              <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">We Are Here For Business Solution Idea</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">¿QUIENES SOMOS?</h2>
               <p className="mt-6 mb-6 text-sm leading-6 text-black text-justify">
-                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-                accusamus quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ab, ad molestias distinctio minima voluptatem ducimus dolor voluptatibus consequatur, beatae excepturi eos, sapiente nihil sunt odit cum praesentium. Eveniet, temporibus!
+              En Iktan Strategies somos la historia de nuestra gente, trabajo duro, retos y éxitos forjaron nuestro espíritu de 
+              excelencia. Los que formamos Iktan Strategies conocemos el sector energético de México y nos desenvolvemos con 
+              soltura no solo porque es nuestro trabajo diario, sino porque nosotros ayudamos a construirlo y lo consideramos nuestro.
               </p>
                 <button
                     type="button"

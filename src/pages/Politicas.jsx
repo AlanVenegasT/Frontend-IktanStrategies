@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Politicas = () => {
   return (
@@ -272,14 +273,14 @@ const Politicas = () => {
           </p>
 
           <div className="mt-3 pb-20 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-            <a href="/">
+            <Link to="/contacto">
                 <button
                   type="submit"
-                  className="float-right animate-bounce   rounded-lg  bg-[#DD102A] duration-700 py-2 px-6 text-base  text-white font-semibold hover:bg-[#BACB5A] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 shadow-2xl"
+                  className="float-right animate-bounce   rounded-lg  bg-[#DD102A] duration-700 py-2 px-6 text-base  text-white font-semibold hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 shadow-2xl"
                 >
                   Acepto
                 </button>
-                </a>
+                </Link>
               </div>
           
           </div>

@@ -9,8 +9,9 @@ const Elegirnos = () => {
         <div className="mx-auto max-w-xs md:max-w-2xl  lg:max-w-4xl xl:max-w-5xl flex flex-col md:flex-col lg:flex-row xl:flex-row  ">
           <div className="basis-1/2 pr-0 md:pr-14 lg:pr-14 xl:pr-14"> {/*Texto */}
           <h2 className='text-[#DD102A] text-start text-sm '>WHY CHOOSE US</h2>
-          <h3 className="text-2xl font-black py-4">We create a curious BUZZ</h3>
-          <p className="pb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quo beatae laudantium quibusdam dolorem id quisquam, temporibus nostrum ducimus accusantium aspernatur </p>
+          <h3 className="text-2xl font-black py-4">Gestión Regulatoria</h3>
+          <p className="pb-4">Los Contratos de E&E conllevan el cumplimiento con múltiples autoridades en alguna de las 400 diferentes posibles gestiones (Autorizaciones, Permisos, Informes, Avisos, Reportes, etc.) derivadas de la regulación vigente.</p>
+          <p className="pb-4">Ayudamos a nuestros clientes a obtener la resolución favorable de trámites del Sector Energía (ASEA, CNH, etc.). Contamos con procesos legal y técnicamente robustos, refinados a través de una amplia experiencia en los procesos de gestión de los Reguladores del Sector.</p>
           <ul className="list-disc list-inside ">
             <li className="py-2 text-justify text-[#DD102A] "><span className="text-black"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rerum eum officiis! Repellat eaque amet at aut necessitatibus, voluptatibus minima illum iusto quasi labore quaerat provident, eum consequuntur ex alias?</span></li>
             <li className="py-2 text-justify text-[#DD102A] "><span className="text-black"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rerum eum officiis! Repellat eaque amet at aut necessitatibus, voluptatibus minima illum iusto quasi labore quaerat provident, eum consequuntur ex alias?</span></li>

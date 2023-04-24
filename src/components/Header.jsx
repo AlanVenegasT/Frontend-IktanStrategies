@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Inicio", href: "#sec0" },
-  { name: "Soluciones", href: "#sec1" },
+  { name: "Inicio", href: "/" },
+  // { name: "Soluciones", href: "#sec1" },
   // { name: "Areas", href: "#sec2" },
-  { name: "Contacto", href: "#sec3" },
+  { name: "Contacto", href: "/contacto" },
 ];
 
 const Header = () => {
@@ -49,7 +49,7 @@ const Header = () => {
           href="/"
           className="flex flex-shrink-0 title-font font-medium items-center text-gray-900 md:mb-0"
         >
-          <span className="sr-only">IMA inc Mechanical Engineers</span>
+          <span className="sr-only">IKTAN Strategies</span>
           <img
             className="h-16 w-auto"
             // src="https://imapowerplants.com/wp-content/uploads/2021/09/IMA_logo.png"

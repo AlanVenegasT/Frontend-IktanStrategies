@@ -11,10 +11,11 @@ function App() {
       <Routes>
         <Route element={<IndexLayout />}>
           <Route path="/" element={<Home />} />
-          
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/politicas" element={<Politicas />} />
         </Route>
-        <Route path="/politicas" element={<Politicas />} />
-        <Route path="/contacto" element={<Contacto />} />
+        
+        
         <Route path="*" element={<Pagina404 />} />
 
       </Routes>
