@@ -5,8 +5,8 @@ const Testimaniales = () => {
     <>
       <div className='pt-20'>
         <div>
-          <h2 className='text-[#DD102A] text-center text-sm '>Testimonial</h2>
-          <h3 className=' text-center text-3xl font-extrabold pb-5 pt-3 '>What Our Customers Say</h3>
+          <h2 className='text-[#DD102A] text-center text-sm '>Testimonios</h2>
+          <h3 className=' text-center text-3xl font-extrabold pb-5 pt-3 '>Lo que nuestros clientes dicen</h3>
           <p className=' text-center md:px-32 lg:px-72 xl:px-72 pb-8 '>Quis ipsum gravida. Accumsan lacus vel facilisis dolore magna aliqua lacus dolor sit amet, consectetur adipiscing elitd do.</p>
         </div>
 

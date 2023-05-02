@@ -8,12 +8,12 @@ const About = () => {
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 ">
           <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 py-16 px-6 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-12 xl:gap-x-20 xl:px-20">
             <img
-              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm md:ml-0 lg:ml-10 xl:ml-10"
-              src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+              className="h-96 w-full flex-none rounded-2xl object-cover  object-center shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm md:ml-0 lg:ml-10 xl:ml-10"
+              src="Plantamar.jpg"
               alt=""
             />
             <div className="w-full flex-auto">
-            <h2 className='text-[#DD102A] text-start text-sm '>About Us</h2>
+            <h2 className='text-[#DD102A] text-start text-sm '>Conocenos</h2>
               <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">¿QUIENES SOMOS?</h2>
               <p className="mt-6 mb-6 text-sm leading-6 text-black text-justify">
               En Iktan Strategies somos la historia de nuestra gente, trabajo duro, retos y éxitos forjaron nuestro espíritu de 

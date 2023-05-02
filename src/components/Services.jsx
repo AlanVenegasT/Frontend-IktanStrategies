@@ -64,8 +64,8 @@ const Services = () => {
     <div>
       <div>
         <h2 className='text-[#DD102A] text-center text-sm '>Servicios</h2>
-        <h3 className=' text-center text-3xl font-extrabold pb-5 pt-3 '>What We Offer</h3>
-        <p className=' text-center pb-8 px-0 md:px-64 lg:px-64 xl:px-64'>Quis ipsum gravida. Accumsan lacus vel facilisis dolore magna aliqua lacus dolor sit amet, consectetur adipiscing elitd do.</p>
+        <h3 className=' text-center text-3xl font-extrabold pb-5 pt-3 '>Lo que ofrecemos.</h3>
+        <p className=' text-center pb-8 px-0 md:px-64 lg:px-64 xl:px-64'>Protegiendo lo que más importa: tu negocio y tranquilidad, nuestra prioridad</p>
       </div>
       <div className=' mx-20'>
       <Slider {...settings}>

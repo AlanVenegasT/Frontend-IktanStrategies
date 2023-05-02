@@ -1,7 +1,10 @@
+
+import { Link } from "react-router-dom";
+
 const navigation = {
   solutions: [
     { name: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quasi dignissimos accusamus quisquam maxime, id nemo reprehenderit!. ", href: "#" },
-    
+
   ],
   support: [
     { name: "250 Northern Blvd Suite 324-1033 Albany, Ny 124-1200", href: "#" },
@@ -22,15 +25,15 @@ const navigation = {
   emailc: [
     { name: "", href: "#" },
   ],
-  
+
 };
 
 const Footer = () => {
   return (
     <>
-    
-    
-    <footer aria-labelledby="footer-heading">
+
+
+      <footer aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
@@ -102,10 +105,12 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div className="mt-10 md:mt-0">
-                    <h3 className="text-sm font-bold leading-6">Sign up for monthly newsletter</h3>
-                      <div>
-                        
-                        </div>  
+                    <h3 className="text-sm font-bold leading-6 pb-5">¿Donde nos encontramos?</h3>
+                    <div className=' bg-black w-[180px] h-[200px] '>
+                      <Link to="https://www.google.com.mx/maps/place/Ciudad+de+M%C3%A9xico,+CDMX/@19.3904366,-99.4732914,10z/data=!3m1!4b1!4m6!3m5!1s0x85ce0026db097507:0x54061076265ee841!8m2!3d19.4326077!4d-99.133208!16zL20vMDRzcWo">
+                      <img src="mapa-cdmx-mexico.jpg" alt="" className='h-full' />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -124,7 +129,7 @@ const Footer = () => {
     </>
   );
 };
-  
-  
+
+
 
 export default Footer

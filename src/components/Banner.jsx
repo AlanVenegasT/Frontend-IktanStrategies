@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { MegaphoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 
@@ -28,12 +29,12 @@ const Banner = () => {
                 </p>
               </div>
               <div className="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
-                <a
-                  href="https://iktantraining.com/"
+                <Link
+                  to="https://iktantraining.com/"
                   className="flex items-center justify-center rounded-md border-2 border-white bg-transparent px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-50 hover:text-[#0C3858] duration-700 "
                 >
                   Conocenos
-                </a>
+                </Link>
               </div>
               <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from 'react-responsive'
@@ -7,7 +8,7 @@ import { useMediaQuery } from 'react-responsive'
 const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
+    title: 'Cambios en las políticas energéticas',
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -23,7 +24,7 @@ const posts = [
   },
   {
     id: 2,
-    title: 'Boost your conversion rate',
+    title: 'Desafíos para la industria petrolera',
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -39,7 +40,7 @@ const posts = [
   },
   {
     id: 3,
-    title: 'Boost your conversion rate',
+    title: 'Nuevos descubrimientos:',
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -55,7 +56,7 @@ const posts = [
   },
   {
     id: 4,
-    title: 'Boost your conversion rate',
+    title: 'Uso de tecnología',
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -71,7 +72,7 @@ const posts = [
   },
   {
     id: 5,
-    title: 'Boost your conversion rate',
+    title: 'Medidas ambientales',
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -98,9 +99,9 @@ const Blog = () => {
         <div className="mx-auto max-w-7xl px-6 md:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className='text-[#DD102A] text-center text-sm '>Blog</h2>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Latest News</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Últimas noticias</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eos iure rerum! Libero sint culpa nam atque soluta iusto non? Minima earum corporis temporibus 
+            Descubre cómo la innovación y el compromiso ambiental están transformando la industria petrolera en la actualidad
             </p>
           </div>
 
@@ -143,14 +144,16 @@ const Blog = () => {
         </div>
       </div>
       <div className="absolute w-[300px] h-32 md:w-[600px] md:h-32 lg:w-[600px] lg:h-32 xl:w-[600px] xl:h-32 bg-white shadow-md left-1/4 -translate-y-16 -translate-x-14 md:-translate-x-28 lg:translate-x-0 xl:translate-x-16">
-      <h4 className="text-2xl font-semibold text-center pt-4">Have a project in mind?</h4>
+      <h4 className="text-2xl font-semibold text-center pt-4">Tienes un proyecto en mente?</h4>
       <div className="flex justify-center pt-4">
+        <Link to="/contacto">
         <button
             type="button"
             className="rounded-md bg-[#DD102A] py-2.5 px-8 text-sm font-semibold text-white shadow-sm duration-700 hover:scale-110 hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Discover More
+              Contactanos
         </button>
+        </Link>
         </div>
     </div>
     </>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
@@ -45,8 +46,8 @@ const Header = () => {
       {/* :DESKTOP MENU */}
       <div className="mx-auto flex justify-between items-center px-16">
         {/* ::Site logo and Name */}
-        <a
-          href="/"
+        <Link
+          to="/"
           className="flex flex-shrink-0 title-font font-medium items-center text-gray-900 md:mb-0"
         >
           <span className="sr-only">IKTAN Strategies</span>
@@ -60,13 +61,13 @@ const Header = () => {
             }
             alt="IMA_logo"
           />
-        </a>
+        </Link>
         {/* ::Navbar */}
         <nav className="hidden md:flex flex-wrap items-center justify-center text-base tracking-wide">
           {navigation.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               // className="text-base font-medium text-[#0000FF] hover:text-indigo-50"
               className={`mr-8 ${
                 isMenuOpen ? navEstilos1 : navEstilos2
@@ -75,7 +76,7 @@ const Header = () => {
               } after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300`}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </nav>
         <button
@@ -103,15 +104,15 @@ const Header = () => {
       {isOpen && (
         <div className="w-full flex flex-col py-4 px-3 md:hidden bg-gray-50 text-base uppercase text-center font-semibold">
           {navigation.map((link) => (
-            <a
-              href={link.href}
+            <Link
+              to={link.href}
               className={`block px-3 py-2 rounded-md hover:text-white hover:bg-[#DD102A] ${
                 isMenuOpen ? navEstilos1 : navEstilos1
               }`}
               key={link.name}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           <p className="px-3 py-2 rounded-md text-white bg-[#DD102A] mt-5 flex items-center justify-center text-center">
             <span className="w-8 h-8">{<PhoneIcon />}</span>
