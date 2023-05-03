@@ -9,12 +9,12 @@ const Hero = () => {
           <h1 className="text-white sm:text-5xl text-4xl font-bold  mb-2 ">TERCERO AUTORIZADO</h1>
           <h2 className='text-white sm:text-4xl text-2xl mb-5 w-44 md:w-96 lg:w-96 xl:w-[450px] '>PARA EXPLORACIÓN Y EXTRACCIÓN DE HIDROCARBUROS.</h2>
           <h2 className='text-white sm:text-4xl text-2xl mb-5'>TA-D-A02/06-16/2021</h2>
-          <button
+          {/* <button
             type="button"
             className="rounded-md bg-white px-3.5 py-2.5 w-28 text-sm font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Button text
-          </button>
+          </button> */}
         </div>
         <img src="wave.png" alt="Imagen" className="absolute bottom-0 w-full object-contain" />
 

@@ -20,12 +20,12 @@ const About = () => {
               excelencia. Los que formamos Iktan Strategies conocemos el sector energético de México y nos desenvolvemos con 
               soltura no solo porque es nuestro trabajo diario, sino porque nosotros ayudamos a construirlo y lo consideramos nuestro.
               </p>
-                <button
+                {/* <button
                     type="button"
                     className="rounded-md bg-[#DD102A] py-2.5 px-8 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                         Discover More
-                </button>
+                </button> */}
             </div>
           </div>
         </div>

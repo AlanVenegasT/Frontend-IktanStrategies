@@ -143,7 +143,10 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-[300px] h-32 md:w-[600px] md:h-32 lg:w-[600px] lg:h-32 xl:w-[600px] xl:h-32 bg-white shadow-md left-1/4 -translate-y-16 -translate-x-14 md:-translate-x-28 lg:translate-x-0 xl:translate-x-16">
+
+
+
+      <div className="absolute w-[300px] h-32 md:w-[600px] md:h-32 lg:w-[600px] lg:h-32 xl:w-[600px]  xl:h-32 bg-white shadow-md left-1/4 -translate-y-16 -translate-x-14 md:-translate-x-28 lg:translate-x-0 xl:translate-x-16 2xl:translate-x-80 ">
       <h4 className="text-2xl font-semibold text-center pt-4">Tienes un proyecto en mente?</h4>
       <div className="flex justify-center pt-4">
         <Link to="/contacto">
@@ -156,6 +159,8 @@ const Blog = () => {
         </Link>
         </div>
     </div>
+
+    
     </>
   )
 }

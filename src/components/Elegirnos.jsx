@@ -22,12 +22,12 @@ const Elegirnos = () => {
           <p className="pb-4">La dictaminación de pozos por Terceros Autorizados es un elemento fundamental para cumplir la regulación de ASEA, por eso, en Iktan Strategies  ofrecer a nuestros clientes las mejores opciones</p>
           
 
-          <button
+          {/* <button
                     type="button"
                     className="rounded-md bg-[#DD102A] mt-5 mb-16 md:mt-5 md:mb-16 lg:mt-0 lg:mb-0 xl:mt-0 xl:mb-0 py-2.5 px-8 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                         Discover More
-                </button>
+                </button> */}
           </div>
           <div className="basis-1/2 flex flex-col">
             <div className="basis-1/2 flex flex-row">
