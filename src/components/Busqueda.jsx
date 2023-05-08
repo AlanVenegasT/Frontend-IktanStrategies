@@ -8,7 +8,7 @@ const Busqueda = () => {
         <div className="mx-auto max-w-4xl sm:px-6 lg:px-8  shadow-lg">
           <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 py-16 px-6 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-10">
             <img
-              className="h-96 w-full flex-none rounded-2xl object-cover object-center shadow-xl  lg:h-auto lg:max-w-[350px] "
+              className="h-60 w-full sm:h-96 sm:w-full flex-none rounded-2xl object-cover object-center shadow-xl  lg:h-auto lg:max-w-[350px] "
               src="Imagen-servicio.png"
               alt=""
             />

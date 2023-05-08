@@ -8,7 +8,7 @@ const About = () => {
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 ">
           <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 py-16 px-6 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-12 xl:gap-x-20 xl:px-20">
             <img
-              className="h-96 w-full flex-none rounded-2xl object-cover  object-center shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm md:ml-0 lg:ml-10 xl:ml-10"
+              className="h-60 w-full sm:h-96 sm:w-full flex-none rounded-2xl object-cover  object-center shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm md:ml-0 lg:ml-10 xl:ml-10"
               src="Plantamar.jpg"
               alt=""
             />
