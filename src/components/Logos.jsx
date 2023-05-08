@@ -1,10 +1,23 @@
-import React from 'react'
+
 import { Link } from "react-router-dom";
+import React, { useRef, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 const Logos = () => {
+  const revealRef = useRef(null);
+ 
+  useEffect(() => {
+    ScrollReveal().reveal(revealRef.current, {
+      duration: 3000,
+      origin: 'left',
+      distance: '400px'
+
+    });
+  }, []);
   return (
     <>
-        <div className="bg-white py-24 sm:py-24">
+    <div ref={revealRef}>
+    <div className="bg-white py-24 sm:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8 shadow-lg pb-5">
       <h3 className="text-center text-lg font-semibold leading-8 text-gray-900">
           Trusted by over <span className=' text-[#DD102A] text-sm '> 13, 041+ </span> happy customers, including
@@ -56,9 +69,9 @@ const Logos = () => {
         </div>
       </div>
     </div>
-
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Logos
+export default Logos;

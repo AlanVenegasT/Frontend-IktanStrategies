@@ -1,9 +1,11 @@
-import React from 'react'
+
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
+import React, { useRef, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 const posts = [
   {
@@ -93,8 +95,20 @@ const Blog = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 }) 
   const slidesToShow = isMobile ? 1 : 3
 
+  const revealRef = useRef(null);
+ 
+  useEffect(() => {
+    ScrollReveal().reveal(revealRef.current, {
+      duration: 3000,
+      origin: 'right',
+      distance: '400px'
+
+    });
+  }, []);
+
   return (
     <>
+    <div ref={revealRef}>
       <div className="bg-white pt-32 pb-48 sm:pt-32 sm:pb-48">
         <div className="mx-auto max-w-7xl px-6 md:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
@@ -160,7 +174,7 @@ const Blog = () => {
         </div>
     </div>
 
-    
+    </div>
     </>
   )
 }

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -45,6 +46,18 @@ const people = [
   ]
 
 const Services = () => {
+
+  const revealRef = useRef(null);
+ 
+  useEffect(() => {
+    ScrollReveal().reveal(revealRef.current, {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '400px'
+
+    });
+  }, []);  
+
   const [currentSlide, setCurrentSlide] = React.useState(0);
 
   const isDesktopOrLaptop = useMediaQuery({
@@ -61,6 +74,7 @@ const Services = () => {
   };
   return (
     <>
+     <div ref={revealRef}>
     <div>
       <div>
         <h2 className='text-[#DD102A] text-center text-sm '>Servicios</h2>
@@ -86,6 +100,7 @@ const Services = () => {
         ))}
       </Slider>
       </div>
+    </div>
     </div>
     </>
   )

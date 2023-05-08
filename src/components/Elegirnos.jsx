@@ -1,10 +1,23 @@
-
+import React, { useRef, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 
 const Elegirnos = () => {
 
+  const revealRef = useRef(null);
+ 
+  useEffect(() => {
+    ScrollReveal().reveal(revealRef.current, {
+      duration: 3000,
+      origin: 'left',
+      distance: '400px'
+
+    });
+  }, []);
+
   return (
     <>
+    <div ref={revealRef}>
       <div className="bg-white">
         <div className="mx-auto max-w-xs md:max-w-2xl  lg:max-w-4xl xl:max-w-5xl flex flex-col md:flex-col lg:flex-row xl:flex-row  ">
           <div className="basis-1/2 pr-0 md:pr-14 lg:pr-14 xl:pr-14"> {/*Texto */}
@@ -65,7 +78,7 @@ const Elegirnos = () => {
           </div>
         </div>
       </div>
-
+      </div>
     </>
   )
 }

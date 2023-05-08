@@ -1,8 +1,23 @@
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import React, { useRef, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 const Busqueda = () => {
+
+  const revealRef = useRef(null);
+ 
+  useEffect(() => {
+    ScrollReveal().reveal(revealRef.current, {
+      duration: 3000,
+      origin: 'right',
+      distance: '400px'
+
+    });
+  }, []);  
+
   return (
     <>
+    <div ref={revealRef}>
     <div className="bg-white py-12 sm:py-12">
       <div className="relative isolate">
         <div className="mx-auto max-w-4xl sm:px-6 lg:px-8  shadow-lg">
@@ -41,7 +56,7 @@ const Busqueda = () => {
         </div>
       </div>
     </div>
-
+    </div>
     </>
   )
 }

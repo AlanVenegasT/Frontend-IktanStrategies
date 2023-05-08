@@ -1,8 +1,24 @@
-import React from 'react'
+
+import React, { useRef, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
+
 
 const About = () => {
+
+  const revealRef = useRef(null);
+ 
+  useEffect(() => {
+    ScrollReveal().reveal(revealRef.current, {
+      duration: 3000,
+      origin: 'left',
+      distance: '400px'
+
+    });
+  }, []);  
+
   return (
     <>
+    <div ref={revealRef}>
     <div className="bg-white py-0 sm:py-0 ">
       <div className="relative isolate">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 ">
@@ -31,7 +47,7 @@ const About = () => {
         </div>
       </div>
     </div>
-
+    </div>
     </>
   )
 }

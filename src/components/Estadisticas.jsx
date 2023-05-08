@@ -1,3 +1,6 @@
+import React, { useRef, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
+
 const stats = [
     { id: 1, name: 'Happy Clients', value: '400+' },
     { id: 2, name: 'Project Complate', value: '120+' },
@@ -6,8 +9,21 @@ const stats = [
   ]
 
 const Estadisticas = () => {
+
+  const revealRef = useRef(null);
+ 
+  useEffect(() => {
+    ScrollReveal().reveal(revealRef.current, {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '400px'
+
+    });
+  }, []);  
+
   return (
     <>
+    <div ref={revealRef}>
     <div className="bg-white py-0 sm:py-0  mb-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
@@ -21,6 +37,7 @@ const Estadisticas = () => {
           </dl>
         </div>
       </div>
+    </div>
     </div>
     </>
   )
