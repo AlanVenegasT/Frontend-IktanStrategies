@@ -36,10 +36,10 @@ const Contacto = () => {
 
     emailjs
       .sendForm(
-        "service_f7lwe15",
-        "template_lvk8xbm",
+        "service_tv1vhyp",
+        "template_89k05b9", 
         form.current,
-        "vXuFb78JyhLiy4xxw"
+        "8E9XW4cn1XEgqXwDf" 
       )
       .then(
         (result) => {

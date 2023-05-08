@@ -53,7 +53,7 @@ const Header = () => {
           <span className="sr-only">IKTAN Strategies</span>
           <img
             className="h-16 w-auto"
-            // src="https://imapowerplants.com/wp-content/uploads/2021/09/IMA_logo.png"
+            // src="LOGO IKTAN STRATEGIES blanco.png"
             src={
               isMenuOpen
                 ? "LogoStrategies.png"
@@ -116,7 +116,7 @@ const Header = () => {
           ))}
           <p className="px-3 py-2 rounded-md text-white bg-[#DD102A] mt-5 flex items-center justify-center text-center">
             <span className="w-8 h-8">{<PhoneIcon />}</span>
-            <span className="pl-3">(+52 1) 55-3717-1132</span>
+            <span className="pl-3">(+52 1) 55</span>
           </p>
           <p className="px-3 py-2 rounded-md text-white bg-[#DD102A] mt-5 flex items-center justify-center text-center lowercase">
             <EnvelopeIcon
@@ -124,7 +124,7 @@ const Header = () => {
               aria-hidden="true"
             />
             <span className="pl-3">
-              mechanical.engineers@imapowerplants.com
+             adriancl.servicios@gmail.com
             </span>
           </p>
         </div>
