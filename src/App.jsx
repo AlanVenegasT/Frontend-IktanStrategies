@@ -4,7 +4,7 @@ import { IndexLayout } from "./layouts/IndexLayout";
 import Home from "./pages/Home";
 import Politicas from "./pages/Politicas";
 import Contacto from "./pages/Contacto";
-import Loanding4 from "./components/Loanding4";
+
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/politicas" element={<Politicas />} />
         </Route>
-        <Route path="/loanding4" element={<Loanding4 />} />
+ 
         
         
         <Route path="*" element={<Pagina404 />} />
