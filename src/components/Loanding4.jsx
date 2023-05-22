@@ -4,17 +4,18 @@ import '../css/Loanding4.css';
 const Loanding4 = () => {
     return (
         <>
-        <div class='html'>
-        <div class='body'>
-            <div class="container">
-                <div class="📦"></div>
-                <div class="📦"></div>
-                <div class="📦"></div>
-                <div class="📦"></div>
-                <div class="📦"></div>
+
+            <body>
+            <div class='flex-direction: column;'>
+                <section class="sec-loading">
+                    <div class="one">
+                    </div>
+                </section>
+
+                <h1 class='typewrite'>Iktan Training.....</h1>
             </div>
-        </div>
-        </div>
+            </body>
+
         </>
     )
 }
