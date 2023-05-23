@@ -3,24 +3,22 @@ import { Link } from "react-router-dom";
 
 const navigation = {
   solutions: [
-    { name: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quasi dignissimos accusamus quisquam maxime, id nemo reprehenderit!. ", href: "#" },
+    { name: "Somos una empresa de consultoría especializada en proyectos del Sector Hidrocarburos en México, orientados al trabajo continuo con excelencia, eficiencia y calidad. ", href: "#" },
 
   ],
   support: [
-    { name: "250 Northern Blvd Suite 324-1033 Albany, Ny 124-1200", href: "#" },
-    { name: "+123 456 789 00", href: "#" },
-    { name: " Contact Us", href: "#" },
+    { name: "CDMX", },
+    { name: "+52 55 8952 7032", },
+    { name: " Contact Us", },
   ],
   company: [
-    { name: "Featuret", href: "#" },
-    { name: "Careers", href: "#" },
-    { name: "Blog Post", href: "#" },
-    { name: "Help & Support", href: "#" },
+    { name: "Blog ",  },
+    { name: "Ayuda y Soporte", },
   ],
   legal: [
-    { name: "About us", href: "#" },
-    { name: "Our clients", href: "#" },
-    { name: "Legal notic", href: "#" },
+    { name: "Quienes somos?",  },
+    { name: "Nuestros clientes", },
+    { name: "Noticias Legales",  },
   ],
   emailc: [
     { name: "", href: "#" },
@@ -120,7 +118,7 @@ const Footer = () => {
         <div className="bg-[#181818]">
           {/* PARTE DE HASTA ABAJO */}
           <div className="py-4 text-center">
-            <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
+            <p className="mt-8 md:text-xl text-base leading-5 text-gray-400 md:order-1 md:mt-0">
               &copy; 2023 Iktan Strategies, Todos los derechos reservados.
             </p>
           </div>

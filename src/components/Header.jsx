@@ -14,8 +14,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Clases tailwind
-  const navEstilos1 = "font-roboto text-base font-bold text-black";
-  const navEstilos2 = "font-roboto text-base font-bold text-white";
+  const navEstilos1 = "font-roboto text-xl font-bold text-black";
+  const navEstilos2 = "font-roboto text-xl font-bold text-white";
   useEffect(() => {
     // Funcion Flecha
     const handleScroll = () => {
@@ -44,7 +44,7 @@ const Header = () => {
     >
 
       {/* :DESKTOP MENU */}
-      <div className="mx-auto flex justify-between items-center px-16">
+      <div className="mx-auto flex justify-between items-center px-24">
         {/* ::Site logo and Name */}
         <Link
           to="/"
@@ -52,7 +52,7 @@ const Header = () => {
         >
           <span className="sr-only">IKTAN Strategies</span>
           <img
-            className="h-16 w-auto"
+            className="h-20 w-auto"
             // src="LOGO IKTAN STRATEGIES blanco.png"
             src={
               isMenuOpen
@@ -116,7 +116,7 @@ const Header = () => {
           ))}
           <p className="px-3 py-2 rounded-md text-white bg-[#DD102A] mt-5 flex items-center justify-center text-center">
             <span className="w-8 h-8">{<PhoneIcon />}</span>
-            <span className="pl-3">(+52 1) 55</span>
+            <span className="pl-3">(+52) 55 8952 7032</span>
           </p>
           <p className="px-3 py-2 rounded-md text-white bg-[#DD102A] mt-5 flex items-center justify-center text-center lowercase">
             <EnvelopeIcon

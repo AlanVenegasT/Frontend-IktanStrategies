@@ -19,11 +19,11 @@ const Logos = () => {
     <div ref={revealRef}>
     <div className="bg-white py-24 sm:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8 shadow-lg pb-5">
-      <h3 className="text-center text-lg font-semibold leading-8 text-gray-900">
-          Trusted by over <span className=' text-[#DD102A] text-sm '> 13, 041+ </span> happy customers, including
+      <h3 className="text-center text- font-semibold leading-8 text-gray-900">
+      Descubre el poder de la <span className=' text-[#DD102A] text-xl '> diversidad: </span>  Explora nuestras empresas y encuentra soluciones para todos.
         </h3>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-4 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <Link to="">
+          <Link to="https://iktanambiental.com">
           <img
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 duration-700 hover:scale-110"
             src="LOGO IKTAN AMBIENTAL.png"

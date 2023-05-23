@@ -2,10 +2,10 @@ import React, { useRef, useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 
 const stats = [
-    { id: 1, name: 'Happy Clients', value: '400+' },
-    { id: 2, name: 'Project Complate', value: '120+' },
-    { id: 3, name: 'Win Awards', value: '130' },
-    { id: 4, name: 'Team Member', value: '24' },
+    { id: 1, name: 'Servicio', value: '8.8/10' },
+    { id: 2, name: 'Ahorro', value: '9.0/10' },
+    { id: 3, name: 'Eficiencia', value: '9.1/10' },
+    { id: 4, name: 'Actualización', value: '8.8/10' },
   ]
 
 const Estadisticas = () => {
