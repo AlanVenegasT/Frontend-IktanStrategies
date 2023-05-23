@@ -45,15 +45,15 @@ const About = () => {
                 </button> */}
                   </div>
 
-                  <div className='flex'>
-                  <div className='basis-1/2 text-justify px-2'> {/*Mision */}
+                  <div className='sm:flex flex-col'>
+                  <div className='basis-1/2 text-justify px-2 s'> {/*Mision */}
                     <p className='font-bold'>MISIÓN</p>
                     <p>Contribuir a la excelencia en el desarrollo de proyectos exitosos del sector hidrocarburos,
                       con el cumplimiento de los objetivos de nuestros clientes cuidado en todo momento la
                       seguridad de las personas y la protección al medio ambiente.
                     </p>
                   </div>
-                  <div className='basis-1/2 text-justify px-2' > {/*Vision */}
+                  <div className='basis-1/2 text-justify px-2 sm:py-0 py-2' > {/*Vision */}
                     <p className='font-bold'>VISIÓN</p>
                     <p>Ser una referencia mundial en el desarrollo de proyectos del 
                         sector de hidrocarburos
