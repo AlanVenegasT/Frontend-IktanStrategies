@@ -18,7 +18,7 @@ const Home = () => {
     <Services/>
     <Busqueda/>
     <About/>
-    <Estadisticas/>
+    {/* <Estadisticas/> */}
     <Elegirnos/>
     {/* <Testimaniales/> */}
     <Blog/>   
